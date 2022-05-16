@@ -62,3 +62,14 @@ while True:
     print()
     print("Project Data: ")
     from ScraGet import ScraGet
+    project = ScraGet.get_project()
+    project.updateScratch(searchProject)
+    print("Title: " + str(project.title))
+    print("Shared on: " + str(project.shared))
+    print("Stats: " + str(project.stats))
+    print()
+
+  else:
+    print()
+    print("Invalid. Please type S, P or U.")
+    print()
